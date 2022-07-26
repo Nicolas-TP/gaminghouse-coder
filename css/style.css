@@ -672,6 +672,12 @@ footer p{
 @media screen and (max-width: 950px){
     .hero{
         height: 65vh;
+        background-image: url("../img/ps4joystickblue.jpg") ;
+        background-position: center;
+        background-size: cover;    
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgb(0, 62, 196);
     }
     .metodos img{
         width: 650px;
@@ -704,6 +710,12 @@ footer p{
 @media screen and (max-width: 600px){
     .hero{
         height: 40vh;
+        background-image: url("../img/ps4joystickblue.jpg") ;
+        background-position: center;
+        background-size: cover;    
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgb(0, 62, 196);
     }
     .consolas-1 .consolas-1-empresa{
         width: 150px;
