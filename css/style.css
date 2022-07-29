@@ -33,7 +33,7 @@ header .header-1 nav ul li a{
     font-size: 15px;
     font-family: 'Righteous', cursive;
     font-weight: 350;
-    transition: 1.5s ease;
+    transition: 0.9s ease;
 }
 header .header-1 nav ul li a:hover{
     text-decoration: underline;
@@ -53,6 +53,8 @@ header .header-1 .header-1-logo p{
     font-family: 'Righteous', cursive;
     padding-bottom: 3px;
     padding-right: 3px;
+    text-align: center;
+    color: black;
 }
 
 /* ------Main------ */
@@ -838,4 +840,33 @@ footer p{
     .fixed{
         display: none;
     }
+}
+@media screen and (max-width: 360px) {
+    .videojuegos{
+        margin-bottom: 18px;
+    }
+    .videojuegos .videojuegos-1{
+        width: 340px;
+        height: 190px;
+    }
+    .videojuegos .videojuegos-1 img{
+        width: 340px;
+        height: 160px;
+    }
+    .metodos img{
+        width: 350px;
+        height: 65px;
+    }
+    .productosv{
+        margin-bottom: 18px;
+    }
+    .productosv .productosv-1{
+        width: 340px;
+        height: 190px;
+    }
+    .productosv .productosv-1 img{
+        width: 340px;
+        height: 160px;
+    }
+
 }
