@@ -23,14 +23,16 @@ header .header-1 nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;
+    height: 140px;
 }
 header .header-1 nav ul li{
-    padding-right: 4px;
+    padding: 0px;
+    margin: 0px;
 }
 header .header-1 nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Righteous', cursive;
     font-weight: 350;
     transition: 0.9s ease;
@@ -43,16 +45,15 @@ header .header-1 nav ul li a:hover{
     padding: 2px;
 }
 header .header-1 .header-1-logo img{
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     padding-left: 3px;
     padding-top: 3px;
 }
 header .header-1 .header-1-logo p{
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Righteous', cursive;
     padding-bottom: 3px;
-    padding-right: 3px;
     text-align: center;
     color: black;
 }
@@ -97,7 +98,7 @@ main{
 }
 .consolas{
     height: 450px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 .consolas-2{
     display: flex;
@@ -122,13 +123,14 @@ main{
     transform: scale(1.05);
 }
 .consolas .consolas-1-empresa img{
-    width: 200px;
-    height: 320px;
+    width: 195px;
+    height: 310px;
     border-top-right-radius: 1px; 
     border-top-left-radius: 1px; 
 }
 .consolas .consolas-1-empresa h3{
     margin-bottom: 3px;
+    font-size: 25px;
 }
 .consolas .consolas-1-empresa .consolas-1-empresa-ps{
     text-decoration: none;
@@ -204,9 +206,9 @@ main{
     transform: scale(1.05);
 }
 .videojuegos .videojuegos-1 img{
-    width: 500px;
-    height: 300px;
-    margin-bottom: 2px;
+    width: 490px;
+    height: 295px;
+    margin-bottom: 5px;
     border-top-right-radius: 4px; 
     border-top-left-radius: 4px; 
 }
@@ -267,11 +269,11 @@ main{
     color: white;
 }
 .productosv img{
-    width: 500px;
-    height: 300px;
-    margin-bottom: 2px;
+    width: 490px;
+    height: 295px;
+    margin-bottom: 5px;
     border-top-right-radius: 4px; 
-    border-top-left-radius: 4px; 
+    border-top-left-radius: 4px;  
 }
 .galeria{
     display: flex;
@@ -352,7 +354,7 @@ h1{
 }
 .ps .ps-2 .ps-2-producto{
     width: 300px;
-    height: 250px;
+    height: 270px;
     border: 2px solid rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -364,16 +366,23 @@ h1{
     transform: scale(1.05);
 }
 .ps .ps-2 .ps-2-producto img{
-    width: 300px;
+    width: 298px;
     height: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+.ps .ps-2 .ps-2-producto p{
+    font-size: 20px;
+    height: 10px;
 }
 .ps .ps-2 .ps-2-producto h3{
     color: rgb(0, 0, 0);
     background-color: rgba(46, 43, 68, 0.644);
     border-radius: 5px;
     width: 80px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
     transition: 1.5s;
@@ -401,7 +410,7 @@ h1{
 }
 .xbox .xbox-2 .xbox-2-producto{
     width: 300px;
-    height: 250px;
+    height: 270px;
     border: 2px solid rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -413,17 +422,24 @@ h1{
     transform: scale(1.05);
 }
 .xbox .xbox-2 .xbox-2-producto img{
-    width: 300px;
+    width: 298px;
     height: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: white;
+}
+.xbox .xbox-2 .xbox-2-producto p{
+    font-size: 20px;
+    height: 10px;
 }
 .xbox .xbox-2 .xbox-2-producto h3{
     color: rgb(0, 0, 0);
     background-color: rgba(46, 43, 68, 0.644);
     border-radius: 5px;
     width: 80px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
     transition: 1.5s;
@@ -446,11 +462,12 @@ h1{
 .nintendo .nintendo-2{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
     flex-wrap: wrap;
 }
 .nintendo .nintendo-2 .nintendo-2-producto{
     width: 300px;
-    height: 250px;
+    height: 270px;
     border: 2px solid rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -462,16 +479,24 @@ h1{
     transform: scale(1.05);
 }
 .nintendo .nintendo-2 .nintendo-2-producto img{
-    width: 300px;
+    width: 298px;
     height: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: white;
+}
+.nintendo .nintendo-2 .nintendo-2-producto p{
+    font-size: 20px;
+    height: 10px;
 }
 .nintendo .nintendo-2 .nintendo-2-producto h3{
     color: rgb(0, 0, 0);
     background-color: rgba(46, 43, 68, 0.644);
     border-radius: 5px;
     width: 80px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
     transition: 1.5s;
@@ -508,7 +533,7 @@ h1{
 }
 .catalogo-2 .catalogo-2-1 .producto1{
     width: 200px;
-    height: 280px;
+    height: 283px;
     border: 2px solid rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -522,15 +547,22 @@ h1{
 }
 .catalogo-2 .catalogo-2-1 .producto1 img{
     width: 200px;
-    height: 190px;
+    height: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: white;
+}
+.catalogo-2 .catalogo-2-1 .producto1 p{
+    height: 10px;
+    font-size: 15px;
 }
 .catalogo-2 .catalogo-2-1 .producto1 h3{
     color: rgb(0, 0, 0);
     background-color: rgba(46, 43, 68, 0.644);
     border-radius: 5px;
-    width: 80px;
+    width: 83px;
+    height: 20px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     transition: 1.5s;
@@ -538,9 +570,10 @@ h1{
 .catalogo-2 .catalogo-2-1 .producto1 h3:hover{
     transform: scale(1.1);
     color: white;
-}.catalogo-2 .catalogo-2-2 .producto2{
+} 
+.catalogo-2 .catalogo-2-2 .producto2{
     width: 200px;
-    height: 280px;
+    height: 283px;
     border: 2px solid rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -554,15 +587,22 @@ h1{
 }
 .catalogo-2 .catalogo-2-2 .producto2 img{
     width: 200px;
-    height: 190px;
+    height: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: white;
+}
+.catalogo-2 .catalogo-2-2 .producto2 p{
+    height: 10px;
+    font-size: 15px;
 }
 .catalogo-2 .catalogo-2-2 .producto2 h3{
     color: rgb(0, 0, 0);
     background-color: rgba(46, 43, 68, 0.644);
     border-radius: 5px;
-    width: 80px;
+    width: 83px;
+    height: 20px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     transition: 1.5s;
@@ -589,7 +629,7 @@ h1{
 }
 .ofertas .ofertas-2 .oferta{
     width: 200px;
-    height: 290px;
+    height: 300px;
     border: 2px solid rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
@@ -614,11 +654,15 @@ h1{
     text-decoration: line-through;
     margin-right: 6px;
 }
+.ofertas .ofertas-2 .oferta p{
+    height: 7px;
+}
 .ofertas .ofertas-2 .oferta h3{
     color: rgb(0, 0, 0);
     background-color: rgba(46, 43, 68, 0.644);
     border-radius: 5px;
-    width: 80px;
+    width: 83px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     transition: 1.5s;
@@ -630,7 +674,7 @@ h1{
 /*--Contacto--*/
 
 .infouser{
-    height: 72vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -658,6 +702,7 @@ footer img:hover{
 footer p{
     font-size: 20px;
     font-family: 'Righteous', cursive;
+    color: black;
 }
 
 /*-----Responsive-----*/
@@ -721,10 +766,10 @@ footer p{
     }
     .consolas-1 .consolas-1-empresa{
         width: 150px;
-        height: 320px;
+        height: 322px;
     }
     .consolas-1 .consolas-1-empresa img{
-        width: 150px;
+        width: 145px;
         height: 260px;
     }
     .metodos img{
@@ -751,7 +796,7 @@ footer p{
         height: 300px;
     }
     .consolas-1 .consolas-1-empresa img{
-        width: 130px;
+        width: 128px;
         height: 230px;
     }
     .video .video-2 .video-2-caja{
@@ -766,7 +811,7 @@ footer p{
         height: 200px;
     }
     .videojuegos .videojuegos-1 img{
-        width: 360px;
+        width: 355px;
         height: 170px;
     }
     .metodos img{
@@ -781,7 +826,7 @@ footer p{
         height: 200px;
     }
     .productosv .productosv-1 img{
-        width: 360px;
+        width: 355px;
         height: 170px;
     }
     .galeria-2{
@@ -812,8 +857,11 @@ footer p{
         height: 270px;
     }
     .consolas-1 .consolas-1-empresa img{
-        width: 110px;
+        width: 105px;
         height: 210px;
+    }
+    .consolas-1 .consolas-1-empresa h3{
+        font-size: 15px;
     }
     .metodos img{
         width: 380px;
@@ -847,10 +895,10 @@ footer p{
     }
     .videojuegos .videojuegos-1{
         width: 340px;
-        height: 190px;
+        height: 195px;
     }
     .videojuegos .videojuegos-1 img{
-        width: 340px;
+        width: 330px;
         height: 160px;
     }
     .metodos img{
@@ -862,11 +910,14 @@ footer p{
     }
     .productosv .productosv-1{
         width: 340px;
-        height: 190px;
+        height: 195px;
     }
     .productosv .productosv-1 img{
-        width: 340px;
+        width: 330px;
         height: 160px;
     }
-
+    #pie .mail p{
+        font-size: 12px;
+        padding-right: 2px;
+    }
 }
