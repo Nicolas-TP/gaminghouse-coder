@@ -7,60 +7,76 @@
 
 /* ------Header------ */
 
-header{
-    background-color: rgb(0, 49, 185);
-}
-header .header-1{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-header .header-1 .header-1-logo{
-    display: flex;
-    flex-direction: column;
-}
-header .header-1 nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    height: 140px;
-}
-header .header-1 nav ul li{
-    padding: 0px;
-    margin: 0px;
-}
-header .header-1 nav ul li a{
+.navbar-brand{
     text-decoration: none;
     color: black;
     font-size: 17px;
-    font-family: 'Righteous', cursive;
     font-weight: 350;
     transition: 0.9s ease;
 }
-header .header-1 nav ul li a:hover{
+.navbar-brand:hover{
     text-decoration: underline;
     background-color: black;
     color: rgb(0, 59, 221);
-    border-radius: 5px;
-    padding: 2px;
-}
-header .header-1 .header-1-logo img{
-    width: 95px;
-    height: 95px;
-    padding-left: 3px;
-    padding-top: 3px;
-}
-header .header-1 .header-1-logo p{
     font-size: 17px;
     font-family: 'Righteous', cursive;
-    padding-bottom: 3px;
-    text-align: center;
+    border-radius: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.nav-item .nav-link{
+    text-decoration: none;
     color: black;
+    font-size: 17px;
+    font-weight: 350;
+    transition: 0.9s ease;
+}
+.nav-item .nav-link:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: rgb(0, 59, 221);
+    font-size: 17px;
+    font-family: 'Righteous', cursive;
+    border-radius: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.dropdown-item{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 350;
+    transition: 0.9s ease;
+}
+.dropdown-item:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: rgb(0, 59, 221);
+    font-size: 17px;
+    font-family: 'Righteous', cursive;
+    border-radius: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.btn-outline-info{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 350;
+    transition: 0.9s ease;
+}
+.btn-outline-info:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: rgb(0, 59, 221);
+    font-size: 17px;
+    font-family: 'Righteous', cursive;
+    border-radius: 10px;
 }
 
 /* ------Main------ */
 
-/* -Index- */
+/* --Index-- */
 
 main{
     background-color: black;
@@ -68,33 +84,9 @@ main{
     font-family: 'Staatliches', cursive;
     letter-spacing: 2px;
 }
-.hero{
-    width: 100%;
-    height: 80vh;
-    background-image: url("../img/ps4joystickblue.jpg") ;
-    background-position: center;
-    background-size: cover;    
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgb(0, 62, 196);
-}
-.hero h1{
-    line-height: 50px;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    font-family: 'Righteous', cursive;
-    color: azure;
-}
-.hero h2{
-    line-height: 50px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    font-family: 'Righteous', cursive;
-    color: azure;
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
 }
 .consolas{
     height: 450px;
@@ -309,7 +301,6 @@ main{
     position: fixed;
     bottom: 60px;
     right: 40px;
-    background-color: rgb(0, 62, 196);
     height: 60px;
     width: 60px;
     border-radius: 25px;
@@ -317,7 +308,7 @@ main{
 }
 .fixed:hover{
     transform: scale(1.2);
-    background-color: rgb(0, 29, 196);
+    background-color: rgb(0, 62, 196);
 }
 .fixed img{
     height: 60px;
@@ -505,6 +496,17 @@ h1{
     transform: scale(1.1);
     color: white;
 }
+.importante{
+    display: flex;
+    justify-content: center;
+}
+.toast-header img{
+    width: 15px;
+    height: 15px;
+}
+.toast-body{
+    color: black;
+}
 
 /*--Videojuegos y Productos Varios--*/
 
@@ -611,6 +613,11 @@ h1{
     transform: scale(1.1);
     color: white;
 }
+.popover-boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
 .ofertas .ofertas-1{
     display: flex;
     justify-content: center;
@@ -673,18 +680,25 @@ h1{
 }
 /*--Contacto--*/
 
-.infouser{
-    height: 80vh;
+.row{
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.col{
+    margin: 10px;
+    width: 40%;
+}
+.col-12{
+    display: flex;
     justify-content: center;
 }
 
 /* ------Footer------ */
 
 footer {
-    background-color: rgb(0, 62, 196);
     padding-top: 2px;
     padding-left: 1px;
     display: flex;
@@ -717,15 +731,6 @@ footer p{
     }
 }
 @media screen and (max-width: 950px){
-    .hero{
-        height: 65vh;
-        background-image: url("../img/ps4joystickblue.jpg") ;
-        background-position: center;
-        background-size: cover;    
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: rgb(0, 62, 196);
-    }
     .metodos img{
         width: 650px;
         height: 130px;
@@ -755,15 +760,6 @@ footer p{
     }
 }
 @media screen and (max-width: 600px){
-    .hero{
-        height: 40vh;
-        background-image: url("../img/ps4joystickblue.jpg") ;
-        background-position: center;
-        background-size: cover;    
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: rgb(0, 62, 196);
-    }
     .consolas-1 .consolas-1-empresa{
         width: 150px;
         height: 322px;

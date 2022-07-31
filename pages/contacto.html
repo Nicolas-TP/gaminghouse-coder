@@ -10,74 +10,93 @@
 </head>
 <body>
     <header>
-        <div class="header-1">
-            <div class="header-1-logo">
-                <img src="../img/gamepad.png" alt="gamepad">
-                <p> GamingHouse </p>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/gamepad.png" alt="logo" width="50" height="50" class="d-inline-block align-text-center">GamingHouse</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu bg-primary">
+                                <li><a class="dropdown-item" href="./consolas.html">Consolas</a></li>
+                                <li><a class="dropdown-item" href="./videojuegos.html">Videojuegos</a></li>
+                                <li><a class="dropdown-item" href="./productosvarios.html">Productos Varios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#pie">Pie</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">| Inicio</a></li>
-                    <li><a href="./consolas.html">| Consolas</a></li>
-                    <li><a href="./videojuegos.html">| Videojuegos</a></li>
-                    <li><a href="./productosvarios.html">| Productos Varios</a></li>
-                    <li><a href="./contacto.html">| Contacto</a></li>
-                    <li><a href="#pie">| Pie</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
     <main>
-        <form action="" class="infouser">
             <h1>Datos del Usuario:</h1>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre">
+            <div class="row">
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
             </div>
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido">
-            </div>
-            <div>
-                <label for="email">Correo Electrónico</label>
-                <input type="email" name="email">
-            </div>
-            <div>
-                <label for="contrasena">Contraseña</label>
-                <input type="password" name="contrasena">
-            </div>
-            <div>
-                <select name="" id="">Provincia
-                    <option value="">Buenos Aires</option>
-                    <option value="">Córdoba</option>
-                    <option value="">Santa Fe</option>
-                    <option value="">Otro</option>
-                    </select>
-            </div>
-            <h2>Género:</h2>
-            <div>
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="masculino">
-            </div>
-            <div>
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="femenino">
-            </div>
-            <div>
-                <label for="otro">Otro</label>
-                <input type="radio" name="otro">
-            </div>
-            <div>
-                <textarea name="" id="" cols="30" rows="5" placeholder="Dejanos tu opinión!"></textarea>
-            </div>
-            <input type="submit">
-            <input type="reset">
-        </form>
-            <div class="fixed">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Provincia</label>
+                        <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Edad</label>
+                        <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            No soy un robot
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                    </form>
+            <div class="fixed bg-primary">
                 <a href="../index.html"><img src="../img/gamepad.png" alt="gamepad"></a>
             </div>
     </main>
-    <footer id="pie">
+    <footer class="piedepag bg-primary" id="pie">
         <div class="redes">
             <a href="https://www.instagram.com/trigal.nico/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
             <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
