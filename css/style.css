@@ -573,6 +573,10 @@ h1{
     transform: scale(1.1);
     color: white;
 } 
+.nuevo{
+    display: flex;
+    justify-content: center;
+}
 .catalogo-2 .catalogo-2-2 .producto2{
     width: 200px;
     height: 283px;
