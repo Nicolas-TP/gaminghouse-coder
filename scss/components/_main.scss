@@ -1,0 +1,12 @@
+@import "./main/index";
+@import "./main/consolas";
+@import "./main/videojuegos-y-prodv";
+@import "./main/contacto";
+
+main{
+    background-color: black;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,73 @@
+@import "../base/variables";
+.container-fluid{
+    .navbar-brand{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-weight: 350;
+        transition: 0.9s ease;
+        &:hover{
+            text-decoration: underline;
+            background-color: black;
+            color: $color-blue;
+            font-size: 17px;
+            font-family: 'Righteous', cursive;
+            border-radius: 10px;
+            padding-right: 3px;
+            padding-left: 3px;
+        }
+    }
+    .nav-item{
+        .nav-link{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            font-weight: 350;
+            transition: 0.9s ease;
+            &:hover{
+                text-decoration: underline;
+                background-color: black;
+                color: $color-blue;
+                font-size: 17px;
+                font-family: 'Righteous', cursive;
+                border-radius: 10px;
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+        }
+    }
+    .dropdown-item{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        font-weight: 350;
+        transition: 0.9s ease;
+        &:hover{
+            text-decoration: underline;
+            background-color: black;
+            color: $color-blue;
+            font-size: 17px;
+            font-family: 'Righteous', cursive;
+            border-radius: 10px;
+            padding-right: 3px;
+            padding-left: 3px;
+        }
+    }
+    .d-flex{
+        .btn-outline-info{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            font-weight: 350;
+            transition: 0.9s ease;
+            &:hover{
+                text-decoration: underline;
+                background-color: black;
+                color: $color-blue;
+                font-size: 17px;
+                font-family: 'Righteous', cursive;
+                border-radius: 10px;
+            }
+        }
+    }
+}
