@@ -5,6 +5,13 @@
     margin: 0;
     padding: 0;
 }
+main{
+    background-color: black;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
 p::selection{
     background-color: $color-blue;
     color: black;

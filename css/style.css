@@ -4,6 +4,13 @@
   margin: 0;
   padding: 0; }
 
+main {
+  background-color: black;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  padding-bottom: 10px; }
+
 p::selection {
   background-color: #003bdd;
   color: black; }
@@ -584,13 +591,6 @@ h1 {
   display: flex;
   justify-content: center; }
 
-main {
-  background-color: black;
-  color: white;
-  font-family: 'Staatliches', cursive;
-  letter-spacing: 2px;
-  padding-bottom: 10px; }
-
 .container-fluid .navbar-brand {
   text-decoration: none;
   color: black;
@@ -655,9 +655,9 @@ main {
 
 /*-----Responsive-----*/
 @media screen and (max-width: 1250px) {
-  .galeria-2 {
+  .galeria .galeria-2 {
     justify-content: center; }
-  .galeria-2 .foto img {
+  .galeria .galeria-2 .foto img {
     width: 210px;
     height: 105px; } }
 
@@ -665,10 +665,10 @@ main {
   .metodos img {
     width: 650px;
     height: 130px; }
-  .galeria-2 {
+  .galeria .galeria-2 {
     grid-auto-rows: 100px;
     justify-content: center; }
-  .galeria-2 .foto img {
+  .galeria .galeria-2 .foto img {
     width: 160px;
     height: 80px;
     grid-area: foto;
@@ -686,19 +686,19 @@ main {
     width: 45px; } }
 
 @media screen and (max-width: 600px) {
-  .consolas-1 .consolas-1-empresa {
+  .consolas .consolas-1 .consolas-1-empresa {
     width: 150px;
     height: 322px; }
-  .consolas-1 .consolas-1-empresa img {
+  .consolas .consolas-1 .consolas-1-empresa img {
     width: 145px;
     height: 260px; }
   .metodos img {
     width: 550px;
     height: 100px; }
-  .galeria-2 {
+  .galeria .galeria-2 {
     grid-auto-rows: 80px;
     justify-content: center; }
-  .galeria-2 .foto img {
+  .galeria .galeria-2 .foto img {
     width: 120px;
     height: 60px;
     grid-area: foto;
@@ -707,12 +707,15 @@ main {
 @media screen and (max-width: 480px) {
   .consolas {
     height: 380px; }
-  .consolas-1 .consolas-1-empresa {
+  .consolas .consolas-1 .consolas-1-empresa {
     width: 130px;
-    height: 300px; }
-  .consolas-1 .consolas-1-empresa img {
-    width: 128px;
+    height: 300px;
+    font-size: 15px; }
+  .consolas .consolas-1 .consolas-1-empresa img {
+    width: 125px;
     height: 230px; }
+  .consolas .consolas-1 .consolas-1-empresa h3 {
+    font-size: 20px; }
   .video .video-2 .video-2-caja {
     height: 220px;
     width: 330px; }
@@ -720,7 +723,7 @@ main {
     margin-bottom: 20px; }
   .videojuegos .videojuegos-1 {
     width: 360px;
-    height: 200px; }
+    height: 210px; }
   .videojuegos .videojuegos-1 img {
     width: 355px;
     height: 170px; }
@@ -731,14 +734,14 @@ main {
     margin-bottom: 20px; }
   .productosv .productosv-1 {
     width: 360px;
-    height: 200px; }
+    height: 210px; }
   .productosv .productosv-1 img {
     width: 355px;
     height: 170px; }
-  .galeria-2 {
+  .galeria .galeria-2 {
     grid-auto-rows: 70px;
     justify-content: center; }
-  .galeria-2 .foto img {
+  .galeria .galeria-2 .foto img {
     width: 110px;
     height: 50px;
     grid-area: foto;
@@ -753,21 +756,21 @@ main {
 @media screen and (max-width: 400px) {
   .consolas {
     height: 350px; }
-  .consolas-1 .consolas-1-empresa {
+  .consolas .consolas-1 .consolas-1-empresa {
     width: 110px;
     height: 270px; }
-  .consolas-1 .consolas-1-empresa img {
+  .consolas .consolas-1 .consolas-1-empresa img {
     width: 105px;
     height: 210px; }
-  .consolas-1 .consolas-1-empresa h3 {
+  .consolas .consolas-1 .consolas-1-empresa h3 {
     font-size: 15px; }
   .metodos img {
     width: 380px;
     height: 70px; }
-  .galeria-2 {
+  .galeria .galeria-2 {
     grid-auto-rows: 70px;
     justify-content: center; }
-  .galeria-2 .foto img {
+  .galeria .galeria-2 .foto img {
     width: 110px;
     height: 50px;
     grid-area: foto;
