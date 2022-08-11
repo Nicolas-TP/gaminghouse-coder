@@ -2,15 +2,16 @@
     background-color: rgba(0, 0, 0, 0.459);
     border-radius: 10px;
 }
+.texto-buscador{
+    display: none;
+}
 .consolas{
     height: 450px;
     margin-bottom: 35px;
     .consolas-2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        @extend %flex-column;
         margin-bottom: 5px;
+        text-align: center;
     }
     .consolas-1{
         display: flex;
@@ -18,7 +19,7 @@
         .consolas-1-empresa{
             width: 200px;
             height: 380px;
-            border: 2px solid rgb(88, 88, 88);
+            border: map-get($boton, borde-card );
             text-align: center;
             border-radius: 4px;
             transition: 1s;
@@ -40,7 +41,7 @@
                 color: black;
                 background-color: rgba(0, 62, 196, 0.644);
                 padding: 3px;
-                border-radius: 5px;
+                border-radius:map-get($boton, borde-radio );
                 transition: 1.5s;
                 &:hover{
                 transform: scale(1.1);
@@ -52,7 +53,7 @@
                 color: black;
                 background-color: rgba(0, 196, 59, 0.644);
                 padding: 3px;
-                border-radius: 5px;
+                border-radius: map-get($boton, borde-radio );
                 transition: 1.5s;
                 &:hover{
                     transform: scale(1.1);
@@ -64,7 +65,7 @@
                 color: black;
                 background-color: rgba(255, 0, 0, 0.644);
                 padding: 3px;
-                border-radius: 5px;
+                border-radius: map-get($boton, borde-radio );
                 transition: 1.5s;
                 &:hover{
                     transform: scale(1.1);
@@ -75,15 +76,11 @@
     }
 }
 .video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column;
     margin-bottom: 30px;
     text-align: center;
     .video-1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex-column;
     }
     .video-2{
         .video-2-caja{
@@ -93,9 +90,7 @@
     } 
 }
 .videojuegos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column;
     margin-bottom: 30px;
     .videojuegos-2{
         text-align: center;
@@ -104,7 +99,7 @@
     .videojuegos-1{
         width: 500px;
         height: 340px;
-        border: 2px solid rgb(88, 88, 88);
+        border: map-get($boton, borde-card );
         text-align: center;
         border-radius: 7px;
         transition: 1s;
@@ -123,7 +118,7 @@
             color: black;
             background-color: rgba(153, 0, 145, 0.644);
             padding: 3px;
-            border-radius: 5px;
+            border-radius: map-get($boton, borde-radio );
             margin-bottom: 2px;
             transition: 1.5s;
             &:hover{
@@ -134,9 +129,7 @@
     }
 }
 .metodos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column;
     margin-bottom: 10px;
     img{
         width: 1000px;
@@ -144,9 +137,7 @@
     }
 }
 .productosv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column;
     margin-bottom: 20px;
     img{
         width: 490px;
@@ -161,7 +152,7 @@
     .productosv-1 {
         width: 500px;
         height: 340px;
-        border: 2px solid rgb(88, 88, 88);
+        border: map-get($boton, borde-card );
         text-align: center;
         border-radius: 7px;
         transition: 1s;
@@ -173,7 +164,7 @@
             color: rgb(0, 0, 0);
             background-color: rgba(46, 43, 68, 0.644);
             padding: 3px;
-            border-radius: 5px;
+            border-radius: map-get($boton, borde-radio );
             margin-bottom: 2px;
             transition: 1.5s;
             &:hover{
@@ -184,9 +175,7 @@
     }
 }
 .galeria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column;
     justify-content: center;
     text-align: center;
     .galeria-2{

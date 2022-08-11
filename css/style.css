@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap");
+.ps .ps-2 .ps-2-producto h3, .xbox .xbox-2 .xbox-2-producto h3, .nintendo .nintendo-2 .nintendo-2-producto h3, .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3, .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3, .ofertas .ofertas-2 .oferta h3 {
+  color: black;
+  background-color: rgba(46, 43, 68, 0.644);
+  border-radius: 5px;
+  width: 83px;
+  height: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s; }
+
+.catalogo .catalogo-2 .catalogo-2-1 .producto1, .catalogo .catalogo-2 .catalogo-2-2 .producto2 {
+  width: 200px;
+  height: 283px;
+  border: 2px solid #585858;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+  transition: 1.25s;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+.consolas .consolas-2, .video, .video .video-1, .videojuegos, .metodos, .productosv, .galeria, .ps .ps-2 .ps-2-producto, .xbox .xbox-2 .xbox-2-producto, .nintendo .nintendo-2 .nintendo-2-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -71,15 +101,15 @@ footer {
   background-color: rgba(0, 0, 0, 0.459);
   border-radius: 10px; }
 
+.texto-buscador {
+  display: none; }
+
 .consolas {
   height: 450px;
   margin-bottom: 35px; }
   .consolas .consolas-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    text-align: center; }
   .consolas .consolas-1 {
     display: flex;
     justify-content: space-around; }
@@ -132,23 +162,13 @@ footer {
           color: white; }
 
 .video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
   text-align: center; }
-  .video .video-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
   .video .video-2 .video-2-caja {
     height: 315px;
     width: 560px; }
 
 .videojuegos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 30px; }
   .videojuegos .videojuegos-2 {
     text-align: center;
@@ -181,18 +201,12 @@ footer {
         color: white; }
 
 .metodos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 10px; }
   .metodos img {
     width: 1000px;
     height: 200px; }
 
 .productosv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 20px; }
   .productosv img {
     width: 490px;
@@ -224,9 +238,6 @@ footer {
         color: white; }
 
 .galeria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center; }
   .galeria .galeria-2 {
@@ -247,11 +258,12 @@ footer {
       .galeria .galeria-2 .foto img:hover {
         transform: scale(1.1); }
 
-h1 {
+.titulo-1 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  text-align: center; }
+  text-align: center;
+  font-size: 30px; }
 
 .ps .ps-1 {
   display: flex;
@@ -272,11 +284,10 @@ h1 {
     width: 300px;
     height: 270px;
     border: 2px solid #585858;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 7px;
-    transition: 1.25s; }
+    transition: 1.25s;
+    margin-top: 7px;
+    margin-bottom: 7px; }
     .ps .ps-2 .ps-2-producto:hover {
       transform: scale(1.05); }
     .ps .ps-2 .ps-2-producto img {
@@ -287,21 +298,9 @@ h1 {
     .ps .ps-2 .ps-2-producto p {
       font-size: 20px;
       height: 10px; }
-    .ps .ps-2 .ps-2-producto h3 {
-      color: black;
-      background-color: rgba(46, 43, 68, 0.644);
-      border-radius: 5px;
-      width: 83px;
-      height: 25px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2px;
-      transition: 1.5s; }
-      .ps .ps-2 .ps-2-producto h3:hover {
-        transform: scale(1.1);
-        color: white; }
+    .ps .ps-2 .ps-2-producto h3:hover {
+      transform: scale(1.1);
+      color: white; }
 
 .xbox .xbox-1 {
   display: flex;
@@ -322,11 +321,10 @@ h1 {
     width: 300px;
     height: 270px;
     border: 2px solid #585858;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 7px;
-    transition: 1.25s; }
+    transition: 1.25s;
+    margin-top: 7px;
+    margin-bottom: 7px; }
     .xbox .xbox-2 .xbox-2-producto:hover {
       transform: scale(1.05); }
     .xbox .xbox-2 .xbox-2-producto img {
@@ -338,21 +336,9 @@ h1 {
     .xbox .xbox-2 .xbox-2-producto p {
       font-size: 20px;
       height: 10px; }
-    .xbox .xbox-2 .xbox-2-producto h3 {
-      color: black;
-      background-color: rgba(46, 43, 68, 0.644);
-      border-radius: 5px;
-      width: 83px;
-      height: 25px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2px;
-      transition: 1.5s; }
-      .xbox .xbox-2 .xbox-2-producto h3:hover {
-        transform: scale(1.1);
-        color: white; }
+    .xbox .xbox-2 .xbox-2-producto h3:hover {
+      transform: scale(1.1);
+      color: white; }
 
 .nintendo .nintendo-1 {
   display: flex;
@@ -373,11 +359,10 @@ h1 {
     width: 300px;
     height: 270px;
     border: 2px solid #585858;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 7px;
-    transition: 1.25s; }
+    transition: 1.25s;
+    margin-top: 7px;
+    margin-bottom: 7px; }
     .nintendo .nintendo-2 .nintendo-2-producto:hover {
       transform: scale(1.05); }
     .nintendo .nintendo-2 .nintendo-2-producto img {
@@ -389,21 +374,9 @@ h1 {
     .nintendo .nintendo-2 .nintendo-2-producto p {
       font-size: 20px;
       height: 10px; }
-    .nintendo .nintendo-2 .nintendo-2-producto h3 {
-      color: black;
-      background-color: rgba(46, 43, 68, 0.644);
-      border-radius: 5px;
-      width: 83px;
-      height: 25px;
-      font-size: 20px;
-      margin-top: 2px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 1.5s; }
-      .nintendo .nintendo-2 .nintendo-2-producto h3:hover {
-        transform: scale(1.1);
-        color: white; }
+    .nintendo .nintendo-2 .nintendo-2-producto h3:hover {
+      transform: scale(1.1);
+      color: white; }
 
 .importante {
   display: flex;
@@ -413,6 +386,10 @@ h1 {
     height: 15px; }
   .importante .toast-container .toast .toast-body {
     color: black; }
+
+.titulo-2 {
+  font-size: 30px;
+  text-align: center; }
 
 .catalogo .catalogo-1 {
   display: flex;
@@ -429,41 +406,20 @@ h1 {
   justify-content: space-around;
   margin-bottom: 30px;
   flex-wrap: wrap; }
-  .catalogo .catalogo-2 .catalogo-2-1 .producto1 {
+  .catalogo .catalogo-2 .catalogo-2-1 .producto1:hover {
+    transform: scale(1.1); }
+  .catalogo .catalogo-2 .catalogo-2-1 .producto1 img {
     width: 200px;
-    height: 283px;
-    border: 2px solid #585858;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 7px;
-    text-align: center;
-    transition: 1.25s; }
-    .catalogo .catalogo-2 .catalogo-2-1 .producto1:hover {
-      transform: scale(1.1); }
-    .catalogo .catalogo-2 .catalogo-2-1 .producto1 img {
-      width: 200px;
-      height: 180px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      background-color: white; }
-    .catalogo .catalogo-2 .catalogo-2-1 .producto1 p {
-      height: 10px;
-      font-size: 15px; }
-    .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3 {
-      color: black;
-      background-color: rgba(46, 43, 68, 0.644);
-      border-radius: 5px;
-      width: 83px;
-      height: 25px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 1.5s; }
-      .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3:hover {
-        transform: scale(1.1);
-        color: white; }
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white; }
+  .catalogo .catalogo-2 .catalogo-2-1 .producto1 p {
+    height: 10px;
+    font-size: 15px; }
+  .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3:hover {
+    transform: scale(1.1);
+    color: white; }
   .catalogo .catalogo-2 .catalogo-2-1 div:nth-child(1) p {
     height: 3px; }
 
@@ -472,41 +428,20 @@ h1 {
   justify-content: space-around;
   margin-bottom: 30px;
   flex-wrap: wrap; }
-  .catalogo .catalogo-2 .catalogo-2-2 .producto2 {
+  .catalogo .catalogo-2 .catalogo-2-2 .producto2:hover {
+    transform: scale(1.1); }
+  .catalogo .catalogo-2 .catalogo-2-2 .producto2 img {
     width: 200px;
-    height: 283px;
-    border: 2px solid #585858;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 7px;
-    text-align: center;
-    transition: 1.25s; }
-    .catalogo .catalogo-2 .catalogo-2-2 .producto2:hover {
-      transform: scale(1.1); }
-    .catalogo .catalogo-2 .catalogo-2-2 .producto2 img {
-      width: 200px;
-      height: 180px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      background-color: white; }
-    .catalogo .catalogo-2 .catalogo-2-2 .producto2 p {
-      height: 10px;
-      font-size: 15px; }
-    .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3 {
-      color: black;
-      background-color: rgba(46, 43, 68, 0.644);
-      border-radius: 5px;
-      width: 83px;
-      height: 25px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 1.5s; }
-      .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3:hover {
-        transform: scale(1.1);
-        color: white; }
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white; }
+  .catalogo .catalogo-2 .catalogo-2-2 .producto2 p {
+    height: 10px;
+    font-size: 15px; }
+  .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3:hover {
+    transform: scale(1.1);
+    color: white; }
   .catalogo .catalogo-2 .catalogo-2-2 div:nth-child(2) p {
     height: 3px; }
   .catalogo .catalogo-2 .catalogo-2-2 div:nth-child(3) p {
@@ -544,7 +479,9 @@ h1 {
     align-items: center;
     border-radius: 7px;
     text-align: center;
-    transition: 1.25s; }
+    transition: 1.25s;
+    margin-top: 7px;
+    margin-bottom: 7px; }
     .ofertas .ofertas-2 .oferta:hover {
       transform: scale(1.05); }
     .ofertas .ofertas-2 .oferta img {
@@ -559,20 +496,43 @@ h1 {
         margin-right: 6px; }
     .ofertas .ofertas-2 .oferta p {
       height: 7px; }
-    .ofertas .ofertas-2 .oferta h3 {
-      color: black;
-      background-color: rgba(46, 43, 68, 0.644);
-      border-radius: 5px;
-      width: 83px;
-      height: 25px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 1.5s; }
-      .ofertas .ofertas-2 .oferta h3:hover {
-        transform: scale(1.1);
-        color: white; }
+    .ofertas .ofertas-2 .oferta h3:hover {
+      transform: scale(1.1);
+      color: white; }
+
+.ps .ps-2 .ps-2-producto h3, .xbox .xbox-2 .xbox-2-producto h3, .nintendo .nintendo-2 .nintendo-2-producto h3, .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3, .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3, .ofertas .ofertas-2 .oferta h3 {
+  color: black;
+  background-color: rgba(46, 43, 68, 0.644);
+  border-radius: 5px;
+  width: 83px;
+  height: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s; }
+
+.catalogo .catalogo-2 .catalogo-2-1 .producto1, .catalogo .catalogo-2 .catalogo-2-2 .producto2 {
+  width: 200px;
+  height: 283px;
+  border: 2px solid #585858;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+  transition: 1.25s;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+.consolas .consolas-2, .video, .video .video-1, .videojuegos, .metodos, .productosv, .galeria, .ps .ps-2 .ps-2-producto, .xbox .xbox-2 .xbox-2-producto, .nintendo .nintendo-2 .nintendo-2-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.titulo-3 {
+  text-align: center;
+  font-size: 33px; }
 
 .row {
   padding: 10px;
@@ -590,6 +550,36 @@ h1 {
 .col-12 {
   display: flex;
   justify-content: center; }
+
+.ps .ps-2 .ps-2-producto h3, .xbox .xbox-2 .xbox-2-producto h3, .nintendo .nintendo-2 .nintendo-2-producto h3, .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3, .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3, .ofertas .ofertas-2 .oferta h3 {
+  color: black;
+  background-color: rgba(46, 43, 68, 0.644);
+  border-radius: 5px;
+  width: 83px;
+  height: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s; }
+
+.catalogo .catalogo-2 .catalogo-2-1 .producto1, .catalogo .catalogo-2 .catalogo-2-2 .producto2 {
+  width: 200px;
+  height: 283px;
+  border: 2px solid #585858;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+  transition: 1.25s;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+.consolas .consolas-2, .video, .video .video-1, .videojuegos, .metodos, .productosv, .galeria, .ps .ps-2 .ps-2-producto, .xbox .xbox-2 .xbox-2-producto, .nintendo .nintendo-2 .nintendo-2-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .container-fluid .navbar-brand {
   text-decoration: none;

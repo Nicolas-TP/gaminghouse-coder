@@ -1,202 +1,173 @@
-h1{
+.titulo-1{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     text-align: center;
-    }
-    .ps{
-        .ps-1{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3px;
-            img{
-                width: 30px;
-                height: 30px;
-                margin-left: 4px;
-                border-radius: 15px;
-            }
-        }
-        .ps-2{
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 50px;
-            flex-wrap: wrap;
-            .ps-2-producto{
-                width: 300px;
-                height: 270px;
-                border: 2px solid rgb(88, 88, 88);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 7px;
-                transition: 1.25s;
-                &:hover{
-                    transform: scale(1.05);
-                }
-                img{
-                    width: 298px;
-                    height: 180px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                }
-                p{
-                    font-size: 20px;
-                    height: 10px;
-                }
-                h3{
-                    color: rgb(0, 0, 0);
-                    background-color: rgba(46, 43, 68, 0.644);
-                    border-radius: 5px;
-                    width: 83px;
-                    height: 25px;
-                    font-size: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 2px;
-                    transition: 1.5s;
-                    &:hover{
-                        transform: scale(1.1);
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-    .xbox{
-        .xbox-1{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3px;
-            img{
-                width: 30px;
-                height: 30px;
-                margin-left: 4px;
-                border-radius: 15px;
-            }
-        }
-        .xbox-2{
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 50px;
-            flex-wrap: wrap;
-            .xbox-2-producto{
-                width: 300px;
-                height: 270px;
-                border: 2px solid rgb(88, 88, 88);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 7px;
-                transition: 1.25s;
-                &:hover{
-                    transform: scale(1.05);
-                }
-                img{
-                    width: 298px;
-                    height: 180px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    background-color: white;
-                }
-                p{
-                    font-size: 20px;
-                    height: 10px;
-                }
-                h3{
-                    color: rgb(0, 0, 0);
-                    background-color: rgba(46, 43, 68, 0.644);
-                    border-radius: 5px;
-                    width: 83px;
-                    height: 25px;
-                    font-size: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 2px;
-                    transition: 1.5s;
-                    &:hover{
-                        transform: scale(1.1);
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-    .nintendo{
-        .nintendo-1{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3px;
-            img{
-                width: 50px;
-                height: 30px;
-                margin-left: 4px;
-                border-radius: 10px;
-            }
-        }
-        .nintendo-2{
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 50px;
-            flex-wrap: wrap;
-            .nintendo-2-producto{
-                width: 300px;
-                height: 270px;
-                border: 2px solid rgb(88, 88, 88);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 7px;
-                transition: 1.25s;
-                &:hover{
-                    transform: scale(1.05);
-                }
-                img{
-                    width: 298px;
-                    height: 180px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    background-color: white;
-                }
-                p{
-                    font-size: 20px;
-                    height: 10px;
-                }
-                h3{
-                    color: rgb(0, 0, 0);
-                    background-color: rgba(46, 43, 68, 0.644);
-                    border-radius: 5px;
-                    width: 83px;
-                    height: 25px;
-                    font-size: 20px;
-                    margin-top: 2px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: 1.5s;
-                    &:hover{
-                        transform: scale(1.1);
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-    .importante{
+    font-size: 30px;
+}
+.ps{
+    .ps-1{
         display: flex;
         justify-content: center;
-        .toast-container{
-            .toast{
-                .toast-header{
-                    img{
-                        width: 15px;
-                        height: 15px;
-                    }
-                } 
-                .toast-body{
-                    color: black;
+        margin-bottom: 3px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-left: 4px;
+            border-radius: 15px;
+        }
+    }
+    .ps-2{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .ps-2-producto{
+            width: 300px;
+            height: 270px;
+            border: 2px solid rgb(88, 88, 88);
+            @extend %flex-column;
+            border-radius: 7px;
+            transition: 1.25s;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 298px;
+                height: 180px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            p{
+                font-size: 20px;
+                height: 10px;
+            }
+            h3{
+                @extend %comprar;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
                 }
             }
         }
     }
+}
+.xbox{
+    .xbox-1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-left: 4px;
+            border-radius: 15px;
+        }
+    }
+    .xbox-2{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .xbox-2-producto{
+            width: 300px;
+            height: 270px;
+            border: 2px solid rgb(88, 88, 88);
+            @extend %flex-column;
+            border-radius: 7px;
+            transition: 1.25s;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 298px;
+                height: 180px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: white;
+            }
+            p{
+                font-size: 20px;
+                height: 10px;
+            }
+            h3{
+                @extend %comprar;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.nintendo{
+    .nintendo-1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3px;
+        img{
+            width: 50px;
+            height: 30px;
+            margin-left: 4px;
+            border-radius: 10px;
+        }
+    }
+    .nintendo-2{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .nintendo-2-producto{
+            width: 300px;
+            height: 270px;
+            border: 2px solid rgb(88, 88, 88);
+            @extend %flex-column;
+            border-radius: 7px;
+            transition: 1.25s;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 298px;
+                height: 180px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: white;
+            }
+            p{
+                font-size: 20px;
+                height: 10px;
+            }
+            h3{
+                @extend %comprar;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.importante{
+    display: flex;
+    justify-content: center;
+    .toast-container{
+        .toast{
+            .toast-header{
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            } 
+            .toast-body{
+                color: black;
+            }
+        }
+    }
+}

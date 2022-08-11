@@ -1,3 +1,7 @@
+.titulo-2{
+    font-size: 30px;
+    text-align: center;
+}
 .catalogo{
     .catalogo-1{
         display: flex;
@@ -17,23 +21,12 @@
             margin-bottom: 30px;
             flex-wrap: wrap;
             .producto1{
-                width: 200px;
-                height: 283px;
-                border: 2px solid rgb(88, 88, 88);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 7px;
-                text-align: center;
-                transition: 1.25s;
+                @extend %producto;
                 &:hover{
                     transform: scale(1.1);
                 }
                 img{
-                    width: 200px;
-                    height: 180px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
+                    @include imagen(200px, 180px, 5px, 5px);
                     background-color: white;
                 }
                 p{
@@ -41,16 +34,7 @@
                     font-size: 15px;
                 }
                 h3{
-                    color: rgb(0, 0, 0);
-                    background-color: rgba(46, 43, 68, 0.644);
-                    border-radius: 5px;
-                    width: 83px;
-                    height: 25px;
-                    font-size: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: 1.5s;
+                    @extend %comprar;
                     &:hover{
                     transform: scale(1.1);
                     color: white;
@@ -69,23 +53,12 @@
             margin-bottom: 30px;
             flex-wrap: wrap;
             .producto2{
-                width: 200px;
-                height: 283px;
-                border: 2px solid rgb(88, 88, 88);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 7px;
-                text-align: center;
-                transition: 1.25s;
+                @extend %producto;
                 &:hover{
                     transform: scale(1.1);
                 }
                 img{
-                    width: 200px;
-                    height: 180px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
+                    @include imagen(200px, 180px, 5px, 5px);
                     background-color: white;
                 }
                 p{
@@ -93,16 +66,7 @@
                     font-size: 15px;
                 }
                 h3{
-                    color: rgb(0, 0, 0);
-                    background-color: rgba(46, 43, 68, 0.644);
-                    border-radius: 5px;
-                    width: 83px;
-                    height: 25px;
-                    font-size: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: 1.5s;
+                    @extend %comprar;
                     &:hover{
                     transform: scale(1.1);
                     color: white;
@@ -157,14 +121,13 @@
             border-radius: 7px;
             text-align: center;
             transition: 1.25s;
+            margin-top: 7px;
+            margin-bottom: 7px;
             &:hover{
                 transform: scale(1.05);
             }
             img{
-                width: 200px;
-                height: 200px;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
+                @include imagen(200px, 200px, 5px, 5px);
             }
             .tachado{
                 display: flex;
@@ -177,16 +140,7 @@
                 height: 7px;
             }
             h3{
-                color: rgb(0, 0, 0);
-                background-color: rgba(46, 43, 68, 0.644);
-                border-radius: 5px;
-                width: 83px;
-                height: 25px;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: 1.5s;
+                @extend %comprar;
                 &:hover{
                     transform: scale(1.1);
                     color: white;
