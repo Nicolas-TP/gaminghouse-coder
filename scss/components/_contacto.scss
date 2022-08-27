@@ -9,15 +9,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.col{
-    margin: 10px;
-    width: 40%;
-    &:focus{
-        border-color: $color-blue;
+    .col{
+        margin: 10px;
+        margin-right: 0px;
+        width: 40%;
+        &:focus{
+            border-color: $color-blue;
+        }
     }
 }
-.col-12{
+.g-3{
+    .col-12{
     display: flex;
     justify-content: center;
+    }
+.col-md-6{
+    margin-right: 0px;
+    }
 }

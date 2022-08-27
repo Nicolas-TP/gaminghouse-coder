@@ -540,16 +540,19 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .row .col {
+    margin: 10px;
+    margin-right: 0px;
+    width: 40%; }
+    .row .col:focus {
+      border-color: #003bdd; }
 
-.col {
-  margin: 10px;
-  width: 40%; }
-  .col:focus {
-    border-color: #003bdd; }
-
-.col-12 {
+.g-3 .col-12 {
   display: flex;
   justify-content: center; }
+
+.g-3 .col-md-6 {
+  margin-right: 0px; }
 
 .ps .ps-2 .ps-2-producto h3, .xbox .xbox-2 .xbox-2-producto h3, .nintendo .nintendo-2 .nintendo-2-producto h3, .catalogo .catalogo-2 .catalogo-2-1 .producto1 h3, .catalogo .catalogo-2 .catalogo-2-2 .producto2 h3, .ofertas .ofertas-2 .oferta h3 {
   color: black;
